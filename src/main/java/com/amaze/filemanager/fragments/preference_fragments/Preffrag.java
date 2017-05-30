@@ -33,6 +33,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.preference.EditTextPreference;
 import android.preference.Preference;
+import android.preference.PreferenceCategory;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
 import android.support.v4.app.ActivityCompat;
@@ -171,6 +172,11 @@ public class Preffrag extends PreferenceFragment implements Preference.OnPrefere
             // fingerprint manager class not defined in the framework
             checkBoxFingerprint.setEnabled(false);
         }
+
+        // Hide root preference
+        Preference mRootMode = findPreference("rootmode");
+        PreferenceCategory mMisc = (PreferenceCategory) findPreference("misc");
+        mMisc.removePreference(mRootMode);
 
     }
 

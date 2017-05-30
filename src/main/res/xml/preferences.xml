@@ -139,7 +139,7 @@
         </com.amaze.filemanager.ui.views.preference.CheckBox>
     </PreferenceCategory>
 
-    <PreferenceCategory android:title="@string/miscellaneous">
+    <PreferenceCategory android:title="@string/miscellaneous" android:key="misc">
 
         <Preference
             android:key="advancedsearch"
@@ -153,6 +153,7 @@
         <com.amaze.filemanager.ui.views.preference.CheckBox
             android:defaultValue="false"
             android:key="rootmode"
+            android:enabled="false"
             android:summary="@string/rootmodesummary"
             android:title="@string/rootmode"/>
     </PreferenceCategory>
