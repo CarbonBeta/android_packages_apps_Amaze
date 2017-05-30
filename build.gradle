@@ -31,7 +31,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.amaze.filemanager"
+        applicationId "com.amaze.carbonfilemanager"
         minSdkVersion 14
         targetSdkVersion 25
         versionCode 57

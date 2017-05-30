@@ -224,7 +224,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|right"
-            app:layout_behavior="com.amaze.filemanager.ui.SnackBarBehavior"
+            app:layout_behavior="com.amaze.carbonfilemanager.ui.SnackBarBehavior"
             android:layout_marginRight="6dp"
             android:layout_marginBottom="2dp"
             android:layout_marginLeft="10dp"
@@ -308,7 +308,7 @@
             the container. A solid background is used for contrast
             with the content view.
        -->
-        <com.amaze.filemanager.ui.views.ScrimInsetsRelativeLayout
+        <com.amaze.carbonfilemanager.ui.views.ScrimInsetsRelativeLayout
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:orientation="vertical"
             android:layout_width="@dimen/drawer_width"
@@ -466,7 +466,7 @@
                     android:gravity="center_vertical" />
             </RelativeLayout>
 
-        </com.amaze.filemanager.ui.views.ScrimInsetsRelativeLayout>
+        </com.amaze.carbonfilemanager.ui.views.ScrimInsetsRelativeLayout>
     </android.support.v4.widget.DrawerLayout>
 </FrameLayout>
 

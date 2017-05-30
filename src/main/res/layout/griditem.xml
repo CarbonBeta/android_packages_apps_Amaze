@@ -89,7 +89,7 @@
                 android:baselineAligned="false">
 
 
-                <com.amaze.filemanager.ui.views.ThemedTextView
+                <com.amaze.carbonfilemanager.ui.views.ThemedTextView
                     android:id="@+id/firstline"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

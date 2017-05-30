@@ -21,7 +21,7 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.amaze.filemanager"
+    package="com.amaze.carbonfilemanager"
     android:versionCode="57"
     android:versionName="3.1.2 RC3">
 
@@ -46,10 +46,10 @@
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         tools:replace="android:label"
-        android:label="Amaze">
+        android:label="File Manager">
 
         <activity
-            android:label="Amaze"
+            android:label="File Manager"
             android:launchMode="singleInstance"
             android:name=".activities.MainActivity"
             android:theme="@style/appCompatLight">
@@ -83,7 +83,7 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="com.amaze.filemanager" />
+                <data android:scheme="com.amaze.carbonfilemanager" />
             </intent-filter>
         </activity>
         <activity
@@ -152,7 +152,7 @@
             />
 
         <service
-            android:name="com.amaze.filemanager.services.ftpservice.FTPService"
+            android:name="com.amaze.carbonfilemanager.services.ftpservice.FTPService"
             android:enabled="true"
             android:exported="true" />
 
@@ -167,20 +167,20 @@
         </service>
 
         <receiver
-            android:name="com.amaze.filemanager.services.ftpservice.FTPReceiver"
+            android:name="com.amaze.carbonfilemanager.services.ftpservice.FTPReceiver"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.amaze.filemanager.services.ftpservice.FTPReceiver.ACTION_START_FTPSERVER" />
-                <action android:name="com.amaze.filemanager.services.ftpservice.FTPReceiver.ACTION_STOP_FTPSERVER" />
+                <action android:name="com.amaze.carbonfilemanager.services.ftpservice.FTPReceiver.ACTION_START_FTPSERVER" />
+                <action android:name="com.amaze.carbonfilemanager.services.ftpservice.FTPReceiver.ACTION_STOP_FTPSERVER" />
             </intent-filter>
         </receiver>
 
         <receiver
-            android:name="com.amaze.filemanager.ui.notifications.FTPNotification"
+            android:name="com.amaze.carbonfilemanager.ui.notifications.FTPNotification"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.amaze.filemanager.services.ftpservice.FTPReceiver.FTPSERVER_STARTED" />
-                <action android:name="com.amaze.filemanager.services.ftpservice.FTPReceiver.FTPSERVER_STOPPED" />
+                <action android:name="com.amaze.carbonfilemanager.services.ftpservice.FTPReceiver.FTPSERVER_STARTED" />
+                <action android:name="com.amaze.carbonfilemanager.services.ftpservice.FTPReceiver.FTPSERVER_STOPPED" />
             </intent-filter>
         </receiver>
     </application>
